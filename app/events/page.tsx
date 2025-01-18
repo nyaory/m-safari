@@ -29,7 +29,7 @@ export default function EventsPage() {
   ]
 
   return (
-    <div className="container py-12">
+    <div className="container py-8 md:py-12 px-4">
       <div className="space-y-6">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-white">Upcoming Events</h1>
         <p className="text-lg text-white/70">
@@ -37,7 +37,7 @@ export default function EventsPage() {
         </p>
       </div>
 
-      <div className="grid gap-6 mt-12 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 mt-8 md:mt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         {events.map((event) => (
           <Card key={event.title} className="bg-white/5 border-white/10">
             <Image
@@ -68,7 +68,7 @@ export default function EventsPage() {
         ))}
       </div>
 
-      <div className="mt-12 p-6 bg-white/5 rounded-lg border border-white/10">
+      <div className="mt-8 md:mt-12 p-4 md:p-6 bg-white/5 rounded-lg border border-white/10">
         <h2 className="text-2xl font-bold mb-4 text-white">Host Your Event</h2>
         <p className="text-white/70 mb-4">
           Looking to organize a sports event in our region? We offer world-class facilities and

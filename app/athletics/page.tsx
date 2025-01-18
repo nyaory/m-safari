@@ -1,10 +1,10 @@
 import { Button } from "@/components/ui/button"
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
+import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import Image from "next/image"
 
 export default function AthleticsPage() {
   return (
-    <div className="container py-12">
+    <div className="container py-8 md:py-12 px-4">
       <div className="space-y-6">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-white">Athletics in M-Safari</h1>
         <p className="text-lg text-white/70">
@@ -12,7 +12,7 @@ export default function AthleticsPage() {
         </p>
       </div>
 
-      <div className="grid gap-6 mt-12 md:grid-cols-2">
+      <div className="grid gap-6 mt-8 md:mt-12 md:grid-cols-2">
         <Image
           src="https://images.unsplash.com/photo-1552674605-db6ffd4facb5?w=800&q=80"
           alt="Athletes training"
@@ -31,7 +31,7 @@ export default function AthleticsPage() {
         </div>
       </div>
 
-      <div className="grid gap-6 mt-12 md:grid-cols-3">
+      <div className="grid gap-6 mt-8 md:mt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Card className="bg-white/5 border-white/10">
           <CardHeader>
             <CardTitle className="text-white">Elite Coaches</CardTitle>

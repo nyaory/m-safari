@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function HikingPage() {
   return (
-    <div className="container py-12">
+    <div className="container py-8 md:py-12 px-4">
       <div className="space-y-6">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-white">Hiking Adventures</h1>
         <p className="text-lg text-white/70">
@@ -13,9 +13,10 @@ export default function HikingPage() {
         </p>
       </div>
 
-      <div className="relative h-[400px] mt-12 rounded-lg overflow-hidden">
+      <div className="relative h-[300px] md:h-[400px] mt-8 md:mt-12 rounded-lg overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1580311735321-77f6e4e90ac5?w=1200&q=80"
+          // src="https://images.unsplash.com/photo-1580311735321-77f6e4e90ac5?w=1200&q=80"
+          src="https://assets.evcdn.net/pim-assets-images/23293/5df7a667dbdc1.jpeg?w=1200&q=80"
           alt="Scenic Trail"
           fill
           className="object-cover"
@@ -31,7 +32,7 @@ export default function HikingPage() {
         </div>
       </div>
 
-      <div className="grid gap-6 mt-12 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 mt-8 md:mt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Card className="bg-white/5 border-white/10">
           <CardHeader>
             <CardTitle className="text-white">Beginner Trails</CardTitle>
@@ -106,7 +107,7 @@ export default function HikingPage() {
         </Card>
       </div>
 
-      <div className="mt-12 grid gap-6 md:grid-cols-2">
+      <div className="mt-8 md:mt-12 grid gap-6 md:grid-cols-2">
         <div className="space-y-4">
           <h2 className="text-2xl font-bold text-white">Guided Tours</h2>
           <p className="text-white/70">
@@ -116,7 +117,8 @@ export default function HikingPage() {
           <Button className="bg-green-500 hover:bg-green-600">Book a Guide</Button>
         </div>
         <Image
-          src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?w=800&q=80"
+          // src="https://images.unsplash.com/photo-1533240332313-0db49b459ad6?w=800&q=80"
+          src="https://images.pexels.com/photos/1143514/pexels-photo-1143514.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
           alt="Guided Tour"
           width={500}
           height={300}

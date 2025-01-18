@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function MuseumPage() {
   return (
-    <div className="container py-12">
+    <div className="container py-8 md:py-12 px-4">
       <div className="space-y-6">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-white">Sports Museum</h1>
         <p className="text-lg text-white/70">
@@ -13,9 +13,10 @@ export default function MuseumPage() {
         </p>
       </div>
 
-      <div className="relative h-[400px] mt-12 rounded-lg overflow-hidden">
+      <div className="relative h-[300px] md:h-[400px] mt-8 md:mt-12 rounded-lg overflow-hidden">
         <Image
-          src="https://images.unsplash.com/photo-1569517282132-25d22f4573e6?w=1200&q=80"
+          // src="https://images.unsplash.com/photo-1569517282132-25d22f4573e6?w=1200&q=80"
+          src="https://sportal365images.com/process/smp-images-production/ringier.africa/17042023/65e736db-886d-4875-9972-0415177e0393.jpg?operations=fit%281200%3A630%29"
           alt="Museum Interior"
           fill
           className="object-cover"
@@ -31,7 +32,7 @@ export default function MuseumPage() {
         </div>
       </div>
 
-      <div className="grid gap-6 mt-12 md:grid-cols-3">
+      <div className="grid gap-6 mt-8 md:mt-12 grid-cols-1 md:grid-cols-3">
         <div className="flex items-center space-x-4">
           <Clock className="h-6 w-6 text-green-500" />
           <div>
@@ -61,7 +62,7 @@ export default function MuseumPage() {
         </div>
       </div>
 
-      <div className="grid gap-6 mt-12 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 mt-8 md:mt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Card className="bg-white/5 border-white/10">
           <CardHeader>
             <CardTitle className="text-white">Hall of Champions</CardTitle>
@@ -115,7 +116,7 @@ export default function MuseumPage() {
         </Card>
       </div>
 
-      <div className="mt-12 p-6 bg-white/5 rounded-lg border border-white/10">
+      <div className="mt-8 md:mt-12 p-4 md:p-6 bg-white/5 rounded-lg border border-white/10">
         <h2 className="text-2xl font-bold mb-4 text-white">Special Events</h2>
         <p className="text-white/70 mb-4">
           Join us for special exhibitions, athlete meet-and-greets, and educational programs

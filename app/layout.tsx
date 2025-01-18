@@ -17,12 +17,11 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className="dark">
-      <body className={`${inter.className} bg-black`}>
+      <body className={`${inter.className} bg-black min-h-screen flex flex-col items-center`}>
         <MainNav />
-        <main>{children}</main>
+        <main className="w-full max-w-[1920px]">{children}</main>
         <Footer />
       </body>
     </html>
   )
 }
-
