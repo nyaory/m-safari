@@ -16,22 +16,26 @@ const destinations = [
   },
   {
     name: "Nandi Hills",
-    image: "https://images.unsplash.com/photo-1580311735321-77f6e4e90ac5?w=800&q=80",
+    // image: "https://images.unsplash.com/photo-1580311735321-77f6e4e90ac5?w=800&q=80",
+    image: "https://images.pexels.com/photos/705075/pexels-photo-705075.jpeg?w=800&q=80",
     href: "/hiking"
   },
   {
     name: "Bike Trails",
-    image: "https://images.unsplash.com/photo-1622898777967-be43a88b52b5?w=800&q=80",
+    // image: "https://images.unsplash.com/photo-1622898777967-be43a88b52b5?w=800&q=80",
+    image: "https://assets.scott-sports.com/pages/scott-travel/trips/south-africa/SAFT-program-1600x860-10.jpg?w=800&q=80",
     href: "/bike-hire"
   },
   {
     name: "Sports Museum",
-    image: "https://images.unsplash.com/photo-1569517282132-25d22f4573e6?w=800&q=80",
+    // image: "https://images.unsplash.com/photo-1569517282132-25d22f4573e6?w=800&q=80",
+    image: "https://www.visitkenya.com/wp-content/uploads/2023/08/Kenya-The-Sports-Tourism-Gateway.jpg?w=800&q=80",
     href: "/museum"
   },
   {
     name: "Cultural Events",
-    image: "https://images.unsplash.com/photo-1604998103924-89e012e5265a?w=800&q=80",
+    // image: "https://images.unsplash.com/photo-1604998103924-89e012e5265a?w=800&q=80",
+    image: "https://thedreamafrica.com/wp-content/uploads/2017/07/Lake-of-Stars-Music-Festival.8.jpg?w=800&q=80",
     href: "/events"
   }
 ]
@@ -49,7 +53,8 @@ const topDestinations = [
   },
   {
     name: "Tea Plantations",
-    image: "https://images.unsplash.com/photo-1576874240748-125df0fab8c9?w=800&q=80",
+    // image: "https://images.unsplash.com/photo-1576874240748-125df0fab8c9?w=800&q=80",
+    image: "https://mediaindia.eu/wp-content/uploads/2017/06/tea-plantation-1751369_1920.jpg?w=800&q=80",
     href: "/hiking"
   },
   {
@@ -92,9 +97,9 @@ export default function Home() {
           priority
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black via-black/50 to-transparent" />
-        <div className="absolute inset-0 container flex flex-col items-start justify-center gap-6">
+        <div className="absolute inset-0 container flex flex-col items-start justify-center gap-4 md:gap-6 px-4">
           <p className="text-lg font-medium text-white/70">Explore</p>
-          <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl md:text-6xl max-w-xl">
+          <h1 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-bold tracking-tighter max-w-xl">
             The Spirit Of
             <br />
             M-SAFARI
@@ -118,12 +123,12 @@ export default function Home() {
         >
           <ChevronRight className="h-6 w-6" />
         </button>
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-4 overflow-x-auto max-w-full p-2">
+        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 flex gap-2 md:gap-4 overflow-x-auto max-w-[90vw] md:max-w-full p-2">
           {destinations.map((_, index) => (
             <button
               key={index}
               onClick={() => setActiveIndex(index)}
-              className={`w-16 h-16 rounded-lg overflow-hidden flex-shrink-0 ${
+              className={`w-12 h-12 md:w-16 md:h-16 rounded-lg overflow-hidden flex-shrink-0 ${
                 index === activeIndex ? 'ring-2 ring-green-500' : 'opacity-50'
               }`}
             >
@@ -140,8 +145,8 @@ export default function Home() {
       </section>
 
       {/* Search Section */}
-      <section className="container py-12">
-        <div className="flex gap-4 max-w-2xl mx-auto">
+      <section className="container py-8 md:py-12 px-4">
+        <div className="flex flex-col sm:flex-row gap-4 max-w-2xl mx-auto">
           <Input
             type="text"
             placeholder="Places to Go"
@@ -149,7 +154,7 @@ export default function Home() {
           />
           <Button 
             size="lg" 
-            className="rounded-full bg-green-500 hover:bg-green-600 text-white px-8"
+            className="rounded-full bg-green-500 hover:bg-green-600 text-white px-8 whitespace-nowrap"
           >
             INSPIRE ME
           </Button>

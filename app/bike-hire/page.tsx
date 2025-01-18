@@ -5,7 +5,7 @@ import Image from "next/image"
 
 export default function BikeHirePage() {
   return (
-    <div className="container py-12">
+    <div className="container py-8 md:py-12 px-4">
       <div className="space-y-6">
         <h1 className="text-4xl font-bold tracking-tighter sm:text-5xl text-white">Hire a Bike</h1>
         <p className="text-lg text-white/70">
@@ -13,7 +13,7 @@ export default function BikeHirePage() {
         </p>
       </div>
 
-      <div className="grid gap-6 mt-12 md:grid-cols-2 lg:grid-cols-3">
+      <div className="grid gap-6 mt-8 md:mt-12 grid-cols-1 md:grid-cols-2 lg:grid-cols-3">
         <Card className="bg-white/5 border-white/10">
           <CardHeader>
             <CardTitle className="flex items-center gap-2 text-white">
@@ -79,7 +79,7 @@ export default function BikeHirePage() {
         </Card>
       </div>
 
-      <div className="grid gap-6 mt-12 md:grid-cols-3">
+      <div className="grid gap-6 mt-8 md:mt-12 grid-cols-1 md:grid-cols-3">
         <div className="flex items-start space-x-4">
           <MapPin className="h-6 w-6 mt-1 text-green-500" />
           <div>

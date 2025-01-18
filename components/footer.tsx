@@ -3,9 +3,9 @@ import Link from "next/link"
 
 export function Footer() {
   return (
-    <footer className="border-t border-white/10 bg-black">
-      <div className="container py-8 md:py-12">
-        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+    <footer className="w-full max-w-[1920px] self-center border-t border-white/10 bg-black">
+      <div className="container py-8 md:py-12 px-4">
+        <div className="grid gap-8 grid-cols-1 sm:grid-cols-2 lg:grid-cols-4">
           <div className="space-y-4">
             <h3 className="text-lg font-bold text-white">About</h3>
             <p className="text-sm text-white/70">
@@ -74,9 +74,9 @@ export function Footer() {
             </div>
           </div>
         </div>
-        <div className="mt-8 border-t border-white/10 pt-8 text-center">
+        <div className="mt-8 pt-8 border-t border-white/10 text-center">
           <p className="text-sm text-white/70">
-            © {new Date().getFullYear()} Nandi County Tourism. All rights reserved.
+            © {new Date().getFullYear()} M-Safari. All rights reserved.
           </p>
         </div>
       </div>
